@@ -283,14 +283,72 @@ end
 --------------------------------------------------
 if Filger.isCata then
 	local data = {
-		-- PALADIN
-		[79102] = true, -- Blessing of Might
-		[20165] = true, -- Seal of Insight
+		-- GENERAL
+		["Luck of the Draw"] = true,
+		["Champion of the Earthen Ring"] = true,
+		["Champion of the Dragonmaw"] = true,
+		["Champion of the Guardians of Hyjal"] = true,
+		["Champion of Therazane"] = true,
+		[1224928] = true, -- Gift of the Bronze
+		[1224930] = true, -- Gift of the Blue
+
+		-- DEATHKNIGHT
+		["Unholy Presence"] = true,
+		["Frost Presence"] = true,
+		["Blood Presence"] = true,
+		["Abomination's Might"] = true,
+		["Ebon Plague"] = true,
+		["Unholy Blight"] = true,
 
 		-- PRIEST
+		["Mind Quickening"] = true,
 		[588] = true, -- Inner Fire
 		[79107] = true, -- Shadow Protection
 		[73413] = true, -- Inner Will
+
+		-- PALADIN
+		["Devotion Aura"] = true,
+		["Blessing of Kings"] = true,
+		[79102] = true, -- Blessing of Might
+		[20165] = true, -- Seal of Insight
+
+		-- WARLOCK
+		["Fel Intelligence"] = true,
+		[53646] = true, -- Demonic Pact
+		["Blood Pact"] = true,
+		[28176] = true, -- Fel Armor
+		[25228] = true, -- Soul Link
+		[109388] = true, -- Legion Strike
+		[86000] = true, -- Curse of Gul'dan
+		[17800] = true, -- Shadow and Flame
+		[47960] = true, -- Shadowflame
+
+		-- ROGUE
+		["Honor Among Thieves"] = true,
+
+		-- DRUID
+		["Leader of the Pack"] = true,
+
+		-- WARRIOR
+		["Rampage"] = true,
+		["Battle Shout"] = true,
+
+		-- HUNTER
+		["Trueshot Aura"] = true,
+		["Hunting Party"] = true,
+		["Furious Howl"] = true,
+
+		-- MAGE
+		["Arcane Brilliance"] = true,
+		["Arcane Tactics"] = true,
+
+		-- SHAMAN
+		["Elemental Oath"] = true,
+		["Totemic Wrath"] = true,
+		["Unleashed Rage"] = true,
+		["Wrath of Air Totem"] = true,
+		["Elemental Resistance"] = true,
+		["Stoneskin"] = true,
 	}
 
 	import(data, blacklist)
