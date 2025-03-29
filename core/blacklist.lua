@@ -321,27 +321,74 @@ end
 -- Cataclysm
 --------------------------------------------------
 if Filger.isCata then
-    local data = {
-        -- DEATHKNIGHT
-        [55610] = true, -- Improved Icy Talons
+	local data = {
+		-- GENERAL
+		["Champion of the Earthen Ring"] = true,
+		["Champion of the Dragonmaw"] = true,
+		["Champion of the Guardians of Hyjal"] = true,
+		["Champion of Therazane"] = true,
+		[1224928] = true, -- Gift of the Bronze
+		[1224930] = true, -- Gift of the Blue
 
-        -- MAGE
-        [61316] = true, -- Dalaran Brilliance
+		-- DEATHKNIGHT
+		["Unholy Presence"] = true,
+		["Frost Presence"] = true,
+		["Blood Presence"] = true,
+		["Abomination's Might"] = true,
+		["Ebon Plague"] = true,
+		["Unholy Blight"] = true,
+		[55610] = true, -- Improved Icy Talons
 
-        -- PALADIN
-        [79102] = true, -- Blessing of Might
-        [20165] = true, -- Seal of Insight
+		-- PRIEST
+		[588] = true, -- Inner Fire
+		[49868] = true, -- Mind Quickening
+		[79107] = true, -- Shadow Protection
+		[73413] = true, -- Inner Will
 
-        -- PRIEST
-        [588] = true, -- Inner Fire
-        [49868] = true, -- Mind Quickening
-        [79107] = true, -- Shadow Protection
-        [73413] = true, -- Inner Will
+		-- PALADIN
+		["Devotion Aura"] = true,
+		["Blessing of Kings"] = true,
+		[79102] = true, -- Blessing of Might
+		[20165] = true, -- Seal of Insight
 
-        -- SHAMAN
-        [30809] = true, -- Unleashed Rage
-        [51470] = true, -- Elemental Oath
-        [77747] = true, -- Totemic Wrath
+		-- WARLOCK
+		["Fel Intelligence"] = true,
+		[53646] = true, -- Demonic Pact
+		["Blood Pact"] = true,
+		[28176] = true, -- Fel Armor
+		[25228] = true, -- Soul Link
+		[109388] = true, -- Legion Strike
+		[86000] = true, -- Curse of Gul'dan
+		[17800] = true, -- Shadow and Flame
+		[47960] = true, -- Shadowflame
+
+		-- ROGUE
+		["Honor Among Thieves"] = true,
+
+		-- DRUID
+		["Leader of the Pack"] = true,
+
+		-- WARRIOR
+		["Rampage"] = true,
+		["Battle Shout"] = true,
+
+		-- HUNTER
+		["Trueshot Aura"] = true,
+		["Hunting Party"] = true,
+		["Furious Howl"] = true,
+
+		-- MAGE
+		["Arcane Brilliance"] = true,
+		["Arcane Tactics"] = true,
+		[61316] = true, -- Dalaran Brilliance
+
+		-- SHAMAN
+		["Wrath of Air Totem"] = true,
+		["Elemental Resistance"] = true,
+		["Stoneskin"] = true,
+		[30809] = true, -- Unleashed Rage
+		[51470] = true, -- Elemental Oath
+		[77747] = true, -- Totemic Wrath
     }
 
     import(data, blacklist)
