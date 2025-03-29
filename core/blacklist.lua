@@ -318,7 +318,7 @@ if EXPANSION >= LE_EXPANSION_WRATH_OF_THE_LICH_KING then
 end
 
 --------------------------------------------------
--- Cataclysm
+-- Cataclysm CUSTOM
 --------------------------------------------------
 if Filger.isCata then
 	local data = {
@@ -327,6 +327,7 @@ if Filger.isCata then
 		["Champion of the Dragonmaw"] = true,
 		["Champion of the Guardians of Hyjal"] = true,
 		["Champion of Therazane"] = true,
+		["Replenishment"] = true,
 		[1224928] = true, -- Gift of the Bronze
 		[1224930] = true, -- Gift of the Blue
 
@@ -344,6 +345,8 @@ if Filger.isCata then
 		[49868] = true, -- Mind Quickening
 		[79107] = true, -- Shadow Protection
 		[73413] = true, -- Inner Will
+		[15286] = true, -- Vampiric Embrace
+		[15473] = true, -- Shadowform
 
 		-- PALADIN
 		["Devotion Aura"] = true,
@@ -353,14 +356,15 @@ if Filger.isCata then
 
 		-- WARLOCK
 		["Fel Intelligence"] = true,
-		[53646] = true, -- Demonic Pact
 		["Blood Pact"] = true,
+		[53646] = true, -- Demonic Pact
 		[28176] = true, -- Fel Armor
 		[25228] = true, -- Soul Link
-		[109388] = true, -- Legion Strike
+		[30213] = true, -- Legion Strike
 		[86000] = true, -- Curse of Gul'dan
 		[17800] = true, -- Shadow and Flame
 		[47960] = true, -- Shadowflame
+		[85768] = true, -- Dark Intent
 
 		-- ROGUE
 		["Honor Among Thieves"] = true,
