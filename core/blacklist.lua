@@ -286,7 +286,7 @@ if Filger.isCata then
 		-- GENERAL
 		["Luck of the Draw"] = true,
 		["Champion of the Earthen Ring"] = true,
-		["Champion of the Dragonmaw"] = true,
+		["Champion of the Dragonmaw Clan"] = true,
 		["Champion of the Guardians of Hyjal"] = true,
 		["Champion of Therazane"] = true,
 		["Replenishment"] = true,
