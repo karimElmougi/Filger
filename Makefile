@@ -19,3 +19,11 @@ clean:
 	@echo "Cleaned."
 
 .PHONY: zip
+
+VERSION := classic
+INSTALL_PATH := $(HOME)/Games/World of Warcraft/_$(VERSION)_/Interface/AddOns/Filger
+
+.PHONY: install
+install: clean zip
+	@rm -rf "$(INSTALL_PATH)"
+	@unzip $(FILENAME) -d "$(INSTALL_PATH)"
