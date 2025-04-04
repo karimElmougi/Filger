@@ -6,6 +6,7 @@
 docs/*
 Makefile
 exclude.lst
+init_libs.sh
 
 **/.git
 **/.gitignore
