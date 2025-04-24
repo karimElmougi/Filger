@@ -75,8 +75,16 @@ local general = {
     [19891] = (EXPANSION <= LE_EXPANSION_CATACLYSM),            -- Resistance Aura
     [32223] = (EXPANSION >= LE_EXPANSION_BURNING_CRUSADE),      -- Crusader Aura
 
+    -- PALADIN
+    [7294] = (EXPANSION <= LE_EXPANSION_CATACLYSM), -- Retribution Aura
+    [19746] = (EXPANSION <= LE_EXPANSION_CATACLYSM), -- Concentration Aura
+    [19891] = (EXPANSION <= LE_EXPANSION_CATACLYSM), -- Resistance Aura
+    [32223] = (EXPANSION >= LE_EXPANSION_BURNING_CRUSADE), -- Crusader Aura
+
     -- PRIEST
     ["Power Word: Fortitude"] = true,
+    ["Mind Flay"] = true,
+    ["Mind Trauma"] = true,
 }
 
 import(general, blacklist)
@@ -327,9 +335,14 @@ if Filger.isCata then
 		["Champion of the Dragonmaw Clan"] = true,
 		["Champion of the Guardians of Hyjal"] = true,
 		["Champion of Therazane"] = true,
+		["Guild Champion"] = true,
 		["Replenishment"] = true,
 		[1224928] = true, -- Gift of the Bronze
 		[1224930] = true, -- Gift of the Blue
+                [85612] = true, -- Fiona's Lucky Charm
+                [85617] = true, -- Argus' Journal
+                [1224928] = true, -- Gift of the Bronze
+                [1224930] = true, -- Gift of the Blue
 
 		-- DEATHKNIGHT
 		["Unholy Presence"] = true,
@@ -350,6 +363,7 @@ if Filger.isCata then
 
 		-- PALADIN
 		["Devotion Aura"] = true,
+                ["Retribution Aura"] = true,
 		["Blessing of Kings"] = true,
 		[79102] = true, -- Blessing of Might
 		[20165] = true, -- Seal of Insight
