@@ -343,6 +343,9 @@ if Filger.isCata then
                 [85617] = true, -- Argus' Journal
                 [1224928] = true, -- Gift of the Bronze
                 [1224930] = true, -- Gift of the Blue
+                ["Night Elf Illusion"] = true,
+                [103004] = true, -- Shadowcloak
+                [103020] = true, -- Shadow Walk 
 
 		-- DEATHKNIGHT
 		["Unholy Presence"] = true,
@@ -385,6 +388,7 @@ if Filger.isCata then
 
 		-- DRUID
 		["Leader of the Pack"] = true,
+		["Master Shapeshifter"] = true,
 
 		-- WARRIOR
 		["Rampage"] = true,
@@ -397,6 +401,7 @@ if Filger.isCata then
 
 		-- MAGE
 		["Arcane Brilliance"] = true,
+		["Dalaran Brilliance"] = true,
 		["Arcane Tactics"] = true,
 		[61316] = true, -- Dalaran Brilliance
 
@@ -921,4 +926,71 @@ if Filger.isRetail then
     import(data, blacklist)
 end
 
+-- Custom
+if Filger.isRetail then
+	local data = {
+	    -- general
+	    ["Luck of the Draw"] = true,
+	    ["Enlisted"] = true,
+	    ["Sign of the Emissary"] = true,
+	    ["Sign of the Past"] = true,
+	    ["Sign of the Twisting Nether"] = true,
+	    ["Sign of the Scourge"] = true,
+	    ["Sign of the Explorer"] = true,
+	    ["Sign of the Critter"] = true,
+	    [61574] = true, 				-- Banner of the Horde
+	    [264420] = true,				-- Soldier of the Alliance
+	    ["WoW's Anniversary"] = true,
+	    [306715] = true,				-- Experience Eliminated
+
+	    -- Death Knight
+	    [97821] = true, 				-- Void Touched
+	    [390271] = true, 				-- Coil of Devastation
+	    [390276] = true, 				-- Rotten Touch
+	    [374557] = true, 				-- Brittle
+	    [391568] = true, 				-- Insidious Chill
+	    [207203] = true, 				-- Frost Shield
+	    [219788] = true, 				-- Ossuary
+	    [274009] = true, 				-- Voracious
+	    [391481] = true, 				-- Coagulopathy
+	    [391459] = true, 				-- Sanguine Ground
+	    [188290] = true, 				-- Death and Decay
+
+	    -- Monk
+	    [166646] = true,                		-- Windwalking
+	    --[392883] = true, 				-- Vivacious Vivication
+	    [129914] = true, 				-- Combat Wisdom
+	    [432180] = true, 				-- Dance of the Wind
+	    [450380] = true, 				-- Chi Wave
+	    [427296] = true,				-- Healing Elixir
+	    [115867] = true,				-- Mana Tea
+	    [414143] = true,				-- Yulon's Grace
+	    [119611] = true,				-- Renewing Mist
+	    [198533] = true,				-- Soothing Mist
+	    [115175] = true,				-- Soothing Mist 2
+	    [124682] = true,				-- Envelopping Mist
+	    [438443] = true,				-- Dance of Chi-Ji
+	    [446334] = true,				-- Zen Pulse
+	    [388193] = true,				-- Jadefire Stomp
+	    [389391] = true,				-- Ancient Concordance
+	    [389387] = true,				-- Awakened Jadefire
+	    [113746] = true,				-- Mystic Touch
+	    [195630] = true,				-- Elusive Brawler
+	    [455071] = true,				-- Ox Stance
+	    [383696] = true,				-- Hit Scheme
+	    [450521] = true,				-- Aspect of Harmony
+	    [451452] = true,				-- Mantra of Purity
+	    [451514] = true,				-- Balanced Stratagem
+	    [451508] = true,				-- Balanced Stratagem
+	    [451181] = true,				-- Clarity of Purpose
+
+	    -- Warrior
+	    [386208] = true,				-- Defensive Stance
+	    [386164] = true,				-- Battle Stance
+	}
+
+	import(data, blacklist)
+end
+
 Filger.blacklist = blacklist
+
