@@ -328,7 +328,7 @@ end
 --------------------------------------------------
 -- Cataclysm CUSTOM
 --------------------------------------------------
-if Filger.isCata then
+if not Filger.isRetail then
 	local data = {
 		-- GENERAL
 		["Champion of the Earthen Ring"] = true,
@@ -375,13 +375,9 @@ if Filger.isCata then
 		["Fel Intelligence"] = true,
 		["Blood Pact"] = true,
 		[53646] = true, -- Demonic Pact
-		[28176] = true, -- Fel Armor
-		[25228] = true, -- Soul Link
-		[30213] = true, -- Legion Strike
-		[86000] = true, -- Curse of Gul'dan
-		[17800] = true, -- Shadow and Flame
-		[47960] = true, -- Shadowflame
-		[85768] = true, -- Dark Intent
+		["Soul Link"] = true,
+		["Legion Strike"] = true,
+		["Dark Intent"] = true,
 
 		-- ROGUE
 		["Honor Among Thieves"] = true,
@@ -942,6 +938,13 @@ if Filger.isRetail then
 	    [264420] = true,				-- Soldier of the Alliance
 	    ["WoW's Anniversary"] = true,
 	    [306715] = true,				-- Experience Eliminated
+	    ["Fire Festival Fortitude"] = true,
+
+	    -- Evoker
+	    [381748] = true, 				-- Blessing of the Bronze
+	    [361021] = true, 				-- Sense Power
+	    [403264] = true, 				-- Black Attunement
+	    [403265] = true, 				-- Bronze Attunement
 
 	    -- Death Knight
 	    [97821] = true, 				-- Void Touched
